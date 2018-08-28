@@ -31,7 +31,6 @@ $.gulp.task('reBuild', $.gulp.series(
     'js',
     'copy'
   )
-  
 ));
 $.gulp.task('serve', $.gulp.parallel(
   'serv',
@@ -50,7 +49,6 @@ $.gulp.task('build', $.gulp.series(
     'js',
     'copy'
   ),
-  
   $.gulp.parallel(
     'serv',
     'watch'
