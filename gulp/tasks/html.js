@@ -5,7 +5,7 @@ module.exports = function() {
     .pipe($.gp.posthtml([
       $.posthtmlInclude()
     ]))
-    // .pipe($.gp.htmlmin({collapseWhitespace: true}))
+    .pipe($.gp.htmlmin({collapseWhitespace: true}))
     .pipe($.gulp.dest("./build"))
 });
 }
