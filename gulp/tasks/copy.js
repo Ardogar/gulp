@@ -2,7 +2,7 @@
 
 module.exports = function() {
   $.gulp.task('copy', function() {
-    return $.gulp.src('./src/fonts/**/*.*', { 
+    return $.gulp.src('./src/font/**/*.*', { 
       since: $.gulp.lastRun('copy'),
       base: "src"
      })
